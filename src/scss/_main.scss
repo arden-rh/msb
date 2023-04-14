@@ -1,0 +1,21 @@
+main {
+	padding: 0 1rem;
+}
+
+h1 {
+	font-family: $primary-font;
+	font-size: 1.6rem;
+	line-height: 2.2rem;
+	letter-spacing: 0.05rem;
+	font-weight: 700;
+}
+
+p {
+	font-family: $primary-font;
+	font-weight: 300;
+}
+
+.link {
+	font-family: $secondary-font;
+	font-weight: 400;
+}

@@ -1,0 +1,25 @@
+// @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'config';
+@import 'header';
+@import 'main';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: $text-black;
+}
+
+body {
+    scroll-behavior: smooth;
+	background-color: $background-white;
+	margin: 0;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}

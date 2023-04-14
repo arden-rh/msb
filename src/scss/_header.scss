@@ -1,0 +1,60 @@
+#logo-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 3rem;
+	font-family: $primary-font;
+	padding: 1rem;
+
+	div {
+		font-size: 0.8rem;
+		display: flex;
+		justify-content: space-between;
+		width: 30%;
+		padding-right: 1rem;
+	}
+
+	#search {
+		text-transform: uppercase;
+	}
+}
+
+nav {
+
+	background-color: $background-grey-light;
+	display: flex;
+	font-family: $primary-font;
+	text-transform: uppercase;
+	justify-content: space-between;
+	padding: 0.5rem 0.7rem;
+
+	span {
+		width: 30%;
+		font-size: 0.65rem;
+		line-height: 1.4rem;
+		padding-right: 0.4rem;
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style: none;
+			font-size: 0.7rem;
+			line-height: 1.4rem;
+			padding: 0 0.2rem;
+
+			&::before {
+
+			}
+		}
+
+		#current {
+			font-weight: 600;
+		}
+	}
+
+}
