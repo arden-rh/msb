@@ -1,13 +1,32 @@
-main {
-	padding: 0 1rem;
+button {
+	color: white;
+	font-family: $primary-font;
+	font-weight: 600;
+	font-size: 0.9rem;
+	letter-spacing: 0.05rem;
+	border: none;
+	border-radius: 30px;
+	padding: 1rem 2.4rem;
+
+}
+
+h1, h2 {
+	font-family: $primary-font;
+	padding: 0;
+	margin: 0;
 }
 
 h1 {
-	font-family: $primary-font;
 	font-size: 1.6rem;
 	line-height: 2.2rem;
 	letter-spacing: 0.05rem;
 	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.4rem;
+	line-height: 2rem;
+	font-weight: 600;
 }
 
 p {
@@ -15,7 +34,102 @@ p {
 	font-weight: 300;
 }
 
+.content {
+	padding: 0 1rem;
+}
+
 .link {
 	font-family: $secondary-font;
 	font-weight: 400;
+}
+
+.section {
+	margin: 2rem 0;
+}
+
+#expert {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		border-radius: 50%;
+		background-color: aqua;
+		height: 75vw;
+		width: 75vw;
+		margin-top: 1rem;
+	}
+
+	div {
+		text-align: center;
+		margin-top: 2rem;
+
+		h2 {
+			font-size: 1.7rem;
+		}
+
+		button {
+			background-color: $primary-red;
+			margin: 1.5rem 0;
+		}
+	}
+}
+
+#forrest-care {
+	background-color: $background-grey-dark;
+	color: white;
+
+	div {
+		margin: 1rem;
+		padding: 1rem 0 2rem;
+	}
+
+	img {
+		height: 500px;
+		width: 100%;
+		background-color: aqua;
+	}
+}
+
+#when-to-report {
+
+	.info-box {
+		font-family: $primary-font;
+		font-weight: 600;
+		font-size: 0.9rem;
+		display: flex;
+		height: 4rem;
+		width: 100%;
+		margin: 3rem 0;
+
+		.box-text::before{
+			background-color: $primary-purple;
+			border: 1px solid $primary-purple;
+			width: 4%;
+			height: 100%;
+			content: "";
+			margin-right: 1rem;
+		}
+
+		.box-text {
+			background-color: $background-grey-light;
+			border-top: 1px solid rgb(202, 202, 197);
+			border-bottom: 1px solid rgb(202, 202, 197);
+			height: 100%;
+			width: 88%;
+			display: flex;
+			align-items: center;
+		}
+
+		.arrow-button {
+			background-color: white;
+			border: 1px solid rgb(202, 202, 197);
+			width: 12%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+	}
 }
