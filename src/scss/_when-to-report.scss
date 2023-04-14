@@ -1,0 +1,80 @@
+#when-to-report {
+
+	.info-box {
+		font-family: $primary-font;
+		font-weight: 600;
+		font-size: 0.9rem;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 3rem 0;
+
+		div:first-child {
+			display: flex;
+			width: 100%;
+			height: 4rem;
+			cursor: pointer;
+		}
+
+		.box-content {
+			display: flex;
+			height: 300px;
+			padding: 1rem;
+			margin-bottom: 2rem;
+			box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.15);
+			-webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.15);
+			-moz-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.15);
+		}
+
+		.box-text::before{
+			background-color: $primary-purple;
+			border: 1px solid $primary-purple;
+			width: 4%;
+			height: 100%;
+			content: "";
+			margin-right: 1.5rem;
+		}
+
+		.box-text {
+			background-color: $background-grey-light;
+			border-top: 1px solid rgb(202, 202, 197);
+			border-bottom: 1px solid rgb(202, 202, 197);
+			height: 100%;
+			width: 88%;
+			display: flex;
+			align-items: center;
+		}
+
+		.box-text-toggled::before{
+			background-color: $primary-purple;
+			border: 1px solid $primary-purple;
+			width: 4%;
+			height: 100%;
+			content: "";
+			margin-right: 1.5rem;
+		}
+
+		.box-text-toggled {
+			background-color: $primary-purple;
+			border: 1px solid $primary-purple;
+			color: white;
+			height: 100%;
+			width: 88%;
+			display: flex;
+			align-items: center;
+		}
+
+		.arrow-button {
+			background-color: white;
+			border: 1px solid rgb(202, 202, 197);
+			width: 12%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			// content: "\f107";
+			// font-family: "Font Awesome\ 5 Free";
+			// font-size: 30px;
+		}
+
+	}
+}

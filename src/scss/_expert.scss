@@ -1,0 +1,28 @@
+#expert {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		border-radius: 50%;
+		background-color: aqua;
+		height: 75vw;
+		width: 75vw;
+		margin-top: 1rem;
+	}
+
+	div {
+		text-align: center;
+		margin-top: 2rem;
+
+		h2 {
+			font-size: 1.7rem;
+		}
+
+		button {
+			background-color: $primary-red;
+			margin: 1.5rem 0;
+		}
+	}
+}
