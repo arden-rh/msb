@@ -71,9 +71,15 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			// content: "\f107";
-			// font-family: "Font Awesome\ 5 Free";
-			// font-size: 30px;
+
+			.chevron {
+				fill: $primary-purple;
+				width: 1.2rem;
+			}
+		}
+
+		.rotate {
+			rotate: 180deg;
 		}
 
 	}
