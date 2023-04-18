@@ -10,7 +10,7 @@ button {
 
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: $primary-font;
 	padding: 0;
 	margin: 0;
@@ -25,6 +25,12 @@ h1 {
 
 h2 {
 	font-size: 1.4rem;
+	line-height: 2rem;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 1.3rem;
 	line-height: 2rem;
 	font-weight: 600;
 }

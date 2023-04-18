@@ -10,7 +10,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
 		rel="stylesheet">
 	<!-- <script defer src="/your-path-to-fontawesome/js/brands.js"></script>
     <script defer src="/your-path-to-fontawesome/js/solid.js"></script>
@@ -42,7 +42,7 @@
 			</nav>
 		</header>
 		<main>
-			<div class="content section">
+			<div class="section content">
 				<h1>Orosanmälan för fallande träd</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 					sed do eiusmod tempor incididunt ut labore et
@@ -183,11 +183,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="section content" id="form">
+			<div class="section content" id="report">
 				<h2>Anmälan av fara för fallande träd</h2>
 				<p>Här kan du göra en anmälan till MSB om träd som har risk för att falla.
 				</p>
-				<p>
+				<p id="about-report">
 					Notera var du såg trädet och gör en felanmälan till oss så snart som möjligt.
 					På så sätt finns en större möjlighet för oss att ingripa snabbare.
 					Ju mer detaljerad information som du lämnar om plats, skador etcetera,
@@ -196,6 +196,52 @@
 					kontaktuppgifter.
 					Uppgifter markerade med stjärna (*) är obligatoriska för att kunna registrera anmälan.
 				</p>
+				<form id="report-form">
+					<h3>Anmälan av fara för fallande träd</h3>
+					<div class="form-field">
+						<label for="name">Anmälare *</label>
+						<input type="text" name="name" id="name" placeholder="Förnamn Efternamn" required>
+					  </div>
+					  <div class="form-field">
+						<label for="email">E-postadress till anmälare *</label>
+						<input type="email" name="email" id="email" placeholder="dinepost@epost.se" required>
+					  </div>
+					  <div class="form-field">
+						<label for="phone">Telefonnummer till anmälare *</label>
+						<input type="tel" name="phone" id="phone" required>
+					  </div>
+					  <div class="form-field">
+						<label for="date">När observerade du trädet? *</label>
+						<input type="date" name="date" id="date" required>
+					  </div>
+					  <div class="form-field">
+						<label for="position">Var observerade du trädet? (plats/adress/GPS-koordinater) *</label>
+						<input type="text" name="position" id="position" placeholder="Plats/adress" required>
+					  </div>
+					  <div class="form-field">
+						<label for="description">Beskriv trädets position *</label>
+						<!-- <input type="text" name="description" id="description" required> -->
+						<textarea form="report-form" type="text" name="description" id="description" required></textarea>
+					  </div>
+					  <div class="form-field">
+						<label for="more-info">Övrig information du tror vi kan ha nytta av (vägbeskrivning/riktmärken etcetera)</label>
+						<!-- <input type="text" name="more-info" id="more-info"> -->
+						<textarea form="report-form" type="text" name="more-info" id="more-info"></textarea>
+					  </div>
+					  <div class="form-field">
+						<input type="submit" id="submit-btn" value="Skicka anmälan">
+					  </div>
+				</form>
+			</div>
+			<div class="section content" id="contact">
+				<h2>Kontakter</h2>
+				<div>
+					<img src="" alt="">
+					<span id="contact-name">Alma Svensson</span>
+					<h4>Kontakt</h4>
+					<span id="job-title">Teamleader <br>Säkerhet i Skog och mark</span>
+					<span id="contact-email">alma.svensson@msb.se</span>
+				</div>
 			</div>
 		</main>
 		<footer>

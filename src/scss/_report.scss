@@ -1,0 +1,56 @@
+#report {
+
+	#about-report {
+		font-family: $secondary-font;
+
+		strong {
+			font-weight: 700;
+		}
+
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+
+		div {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.form-field {
+
+			font-family: $primary-font;
+			margin: 0.5rem 0;
+
+			input {
+				color: rgb(202, 202, 197);
+				font-family: $primary-font;
+				font-size: 1rem;
+				margin-top: 0.1rem;
+				padding: 0.4rem;
+			}
+
+			::placeholder {
+				color: rgb(202, 202, 197);
+				opacity: 1;
+			  }
+
+			  ::-ms-input-placeholder {
+				color: rgb(202, 202, 197);
+			  }
+
+			#submit-btn {
+				background-color: $primary-purple;
+				color: white;
+				width: fit-content;
+				border-radius: 20px;
+				border: none;
+				font-weight: 600;
+				letter-spacing: .05rem;
+				padding: 0.75rem 1.4rem;
+			}
+		}
+	}
+
+}
