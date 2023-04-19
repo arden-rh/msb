@@ -2,6 +2,12 @@ footer {
 
 	font-family: $primary-font;
 
+	h4 {
+		font-size: 1.1rem;
+		line-height: 2rem;
+		font-weight: 600;
+	}
+
 	.footer-btn {
 		border: 2px solid $primary-purple;
 		color: $primary-purple;
@@ -35,6 +41,28 @@ footer {
 		}
 	}
 
+	.websites {
+
+		margin-bottom: 3rem;
+
+		a {
+			color: $primary-purple;
+			font-size: 0.9rem;
+			font-weight: 600;
+
+			i {
+				margin-left: 0.8rem;
+			}
+		}
+
+		p {
+			font-size: 0.75rem;
+			line-height: 1.1rem;
+			margin: 0;
+		}
+
+	}
+
 	#links {
 		background-color: white;
 		padding-top: 0.5rem;
@@ -63,15 +91,79 @@ footer {
 				text-align: center;
 			}
 		}
+
+		#other-websites {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			margin-bottom: 1rem;
+
+			#line {
+				background-color: rgb(202, 202, 197);
+				height: 1px;
+				width: 34%;
+				margin-left: 1rem;
+			}
+		}
 	}
 
 	#contact-msb {
 		background-color: $background-grey-dark;
 		color: white;
+		display: flex;
+		flex-direction: column;
+		margin-top: 3rem;
 
-		h5 {
+		a {
+			font-size: 0.9rem;
+			display: block;
+			text-decoration: underline;
+		}
+
+		div {
+			margin-bottom: 2rem;
+
+			&:nth-child(2) {
+				margin: 0;
+
+				a {
+					font-weight: 300;
+					margin-bottom: 2rem;
+				}
+			}
+		}
+
+		img {
+			height: 75px;
+			width: 200px;
+			background-color: aqua;
+			margin-top: 2rem;
+		}
+
+		p {
+			font-size: 0.9rem;
+			margin: 0 0 1rem 0;
+		}
+
+		span {
 			text-transform: uppercase;
+			font-size: 0.7rem;
 			font-weight: 300;
 		}
+
+		#quote {
+			border-top: 1px solid rgb(144, 143, 136);
+			padding: 2rem;
+			text-align: center;
+
+			span {
+				text-transform: none;
+				font-size: 1rem;
+				font-weight: 600;
+				line-height: 1.8rem;
+				letter-spacing: 0.02rem;
+			}
+		}
+
 	}
 }
