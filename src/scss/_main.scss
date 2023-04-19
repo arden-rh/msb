@@ -1,3 +1,12 @@
+a {
+	text-decoration: none;
+	color: inherit;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
 button {
 	color: white;
 	font-family: $primary-font;
@@ -35,9 +44,19 @@ h3 {
 	font-weight: 600;
 }
 
+h4 {
+	font-size: 1.1rem;
+	line-height: 2rem;
+	font-weight: 600;
+}
+
 p {
 	font-family: $primary-font;
 	font-weight: 300;
+}
+
+section {
+	margin: 2rem 0;
 }
 
 .content {
@@ -62,8 +81,4 @@ p {
 	&:hover {
 		text-decoration: underline;
 	}
-}
-
-.section {
-	margin: 2rem 0;
 }

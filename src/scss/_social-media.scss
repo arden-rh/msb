@@ -1,5 +1,6 @@
 #social-media {
 	font-family: $primary-font;
+	padding-bottom: 10rem;
 
 	div:first-child {
 		background-color: $background-grey-dark;
@@ -35,14 +36,12 @@
 			letter-spacing: .05rem;
 			padding: 0.75rem 1.4rem;
 			margin-bottom: 0.7rem;
-			text-decoration: none;
 			text-transform: uppercase;
 
 			i {
 				margin-left: 0.8rem;
 				font-size: 0.8rem;
 			}
-
 		}
 	}
 }
