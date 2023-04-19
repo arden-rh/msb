@@ -32,8 +32,8 @@
 				</div>
 			</div>
 			<nav>
-				<span>Du är här:</span>
 				<ul>
+					<li>Du är här:</li>
 					<li>Hem</li>
 					<li>Verktyg och tjänster</li>
 					<li>Säkerhet i Skog och Mark</li>
@@ -42,14 +42,14 @@
 			</nav>
 		</header>
 		<main>
-			<div class="section content">
+			<div class="section content" id="intro">
 				<h1>Orosanmälan för fallande träd</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 					sed do eiusmod tempor incididunt ut labore et
 					dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation.
 				</p>
-				<span class="link">Direkt till anmälan</span>
+				<span class="link"><i class="fa-solid fa-arrow-right"></i>Direkt till anmälan</span>
 			</div>
 			<div class="section" id="forrest-care">
 				<img src="" alt="">
@@ -61,7 +61,7 @@
 						irure dolor in reprehenderit in voluptate velit esse cillum dolore
 						eu fugiat nulla pariatur.
 					</p>
-					<span class="link">Läs mer om skogsskötsel</span>
+					<span class="link"><i class="fa-solid fa-arrow-right"></i>Läs mer om skogsskötsel</span>
 				</div>
 			</div>
 			<div class="section" id="expert">
@@ -192,7 +192,8 @@
 					På så sätt finns en större möjlighet för oss att ingripa snabbare.
 					Ju mer detaljerad information som du lämnar om plats, skador etcetera,
 					desto bättre kan vi hantera ditt ärende.<br>
-					<strong>Observera,</strong> vi kan behöva komma i kontakt med dig efter din anmälan så var noga med att fylla i rätt
+					<strong>Observera,</strong> vi kan behöva komma i kontakt med dig efter din anmälan så var noga med
+					att fylla i rätt
 					kontaktuppgifter.
 					Uppgifter markerade med stjärna (*) är obligatoriska för att kunna registrera anmälan.
 				</p>
@@ -201,36 +202,38 @@
 					<div class="form-field">
 						<label for="name">Anmälare *</label>
 						<input type="text" name="name" id="name" placeholder="Förnamn Efternamn" required>
-					  </div>
-					  <div class="form-field">
+					</div>
+					<div class="form-field">
 						<label for="email">E-postadress till anmälare *</label>
 						<input type="email" name="email" id="email" placeholder="dinepost@epost.se" required>
-					  </div>
-					  <div class="form-field">
+					</div>
+					<div class="form-field">
 						<label for="phone">Telefonnummer till anmälare *</label>
 						<input type="tel" name="phone" id="phone" required>
-					  </div>
-					  <div class="form-field">
+					</div>
+					<div class="form-field">
 						<label for="date">När observerade du trädet? *</label>
 						<input type="date" name="date" id="date" required>
-					  </div>
-					  <div class="form-field">
+					</div>
+					<div class="form-field">
 						<label for="position">Var observerade du trädet? (plats/adress/GPS-koordinater) *</label>
 						<input type="text" name="position" id="position" placeholder="Plats/adress" required>
-					  </div>
-					  <div class="form-field">
+					</div>
+					<div class="form-field">
 						<label for="description">Beskriv trädets position *</label>
 						<!-- <input type="text" name="description" id="description" required> -->
-						<textarea form="report-form" type="text" name="description" id="description" required></textarea>
-					  </div>
-					  <div class="form-field">
-						<label for="more-info">Övrig information du tror vi kan ha nytta av (vägbeskrivning/riktmärken etcetera)</label>
+						<textarea form="report-form" type="text" name="description" id="description"
+							required></textarea>
+					</div>
+					<div class="form-field">
+						<label for="more-info">Övrig information du tror vi kan ha nytta av (vägbeskrivning/riktmärken
+							etcetera)</label>
 						<!-- <input type="text" name="more-info" id="more-info"> -->
 						<textarea form="report-form" type="text" name="more-info" id="more-info"></textarea>
-					  </div>
-					  <div class="form-field">
+					</div>
+					<div class="form-field">
 						<input type="submit" id="submit-btn" value="Skicka anmälan">
-					  </div>
+					</div>
 				</form>
 			</div>
 			<div class="section content" id="contact">
@@ -238,24 +241,116 @@
 				<div>
 					<img src="" alt="">
 					<span id="contact-name">Alma Svensson</span>
-					<h4>Kontakt</h4>
+					<span id="contact-title">Kontakt</span>
 					<span id="job-title">Teamleader <br>Säkerhet i Skog och mark</span>
 					<span id="contact-email">alma.svensson@msb.se</span>
 				</div>
 			</div>
 			<div class="section content" id="social-media">
-				<div></div>
+				<div>Senast granskad: 19 april 2023</div>
 				<div id="social-media-links">
-					<a href="">Facebook</a>
-					<a href="">Twitter <i class="fa-twitter"></i></a>
-					<a href="">Kopiera Länk</a>
+					<span>Dela sidan med andra</span>
+					<a href="">Facebook<i class="fa-brands fa-facebook-f"></i></a>
+					<a href="">Twitter<i class="fa-brands fa-twitter"></i></a>
+					<a href="">Kopiera Länk<i class="fa-solid fa-link"></i></a>
 				</div>
 
 			</div>
 		</main>
 		<footer>
-			<section></section>
-			<section></section>
+			<section class="content" id="links">
+				<h4>Om MSB</h4>
+				<ul>
+					<li>Nyhetsbrev</li>
+					<li>Vårt uppdrag</li>
+					<li>Jobba hos oss</li>
+					<li>Om weebplatsen</li>
+					<li>Tillgänglighetsredogörelse</li>
+				</ul>
+				<h4>Välbesökta sidor</h4>
+				<ul>
+					<li>Kriget i Ukraina</li>
+					<li>Skyddsrumskarta</li>
+					<li>Broschyren Om krisen eller kriger kommer</li>
+					<li>Totalförsvarsplikt</li>
+				</ul>
+				<h4>Våra tjänster</h4>
+				<ul>
+					<li>Fortbildningstjänsten</li>
+					<li>Rakel</li>
+					<li>Statistik</li>
+					<li>RIB - beslutsstöd till räddningstjänst</li>
+				</ul>
+				<h4>MSB i socala medier</h4>
+				<ul>
+					<li><i class="fa-brands fa-facebook-f"></i>Facebook</li>
+					<li>Instagram</li>
+					<li>LinkedIn</li>
+					<li><i class="fa-brands fa-twitter"></i>Twitter</li>
+					<li>YouTube</li>
+				</ul>
+				<a href="">Social medier<i class="fa-solid fa-arrow-right"></i></a>
+				<h4>Våra andra webbplatser</h4>
+				<div>
+					<a href="">CERT-SE</a>
+					<p>
+						CERT-SE är Sveriges nationella CSIRT (Computer Security
+						Incident Response Team) med uppgift att stödja samhället i
+						arbetet med att hantera och förebygga IT-incidenter.
+					</p>
+				</div>
+				<div>
+					<a href="">Informationssäkerhet.se</a>
+					<p>
+						På Informationssäkerhet.se erbjuds ett sammanhållet
+						och praktiskt stöd för systematiskt informationssäkerhetsarbete
+						från svenska myndigheter.
+					</p>
+				</div>
+				<div>
+					<a href="">Krisinformation.se</a>
+					<p>
+						Krisinformation.se är en webbplats som förmedlar information
+						från myndigheter och andra ansvariga till allmänheten före,
+						under och efter en stor händelse eller kris.
+					</p>
+				</div>
+				<div>
+					<a href="">Tjugofyra7</a>
+					<p>
+						Tjugofyra7 bevakar utvecklingen inom Myndigheten för
+						samhällsskydd och beredskaps ansvarsområden och ska
+						stimulera till debatt i dessa frågor.
+					</p>
+				</div>
+				<a href="">Fler webbplatser<i class="fa-solid fa-arrow-right"></i></a>
+			</section>
+			<section class="content" id="contact-msb">
+				<img src="" alt="">
+
+				<h4>Kontakta MSB</h4>
+				<div>
+					<h5>Telefonnummer</p>
+						<p>0771-240 240</p>
+
+						<h5>E-post</h5>
+						<a href="">registrator@msb.se</a>
+
+						<h5>Postadress</h5>
+						<p>651 81 Karlstad</p>
+
+						<h5>Organisationsnummer</h5>
+						<p>202100-5984</p>
+				</div>
+				<h4>Andra kontaktvägar</h4>
+				<div>
+					<a href="">Press</a>
+					<a href="">Besöksadresser och öppettider</a>
+				</div>
+				<div>
+					<span>Ett säkrare samhälle i en föränderlig värld</span>
+				</div>
+			</section>
 		</footer>
 	</div>
 	<script type="module" src="/src/main.ts"></script>

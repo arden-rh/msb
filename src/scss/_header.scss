@@ -25,15 +25,7 @@ nav {
 	display: flex;
 	font-family: $primary-font;
 	text-transform: uppercase;
-	justify-content: space-between;
 	padding: 0.5rem 0.7rem;
-
-	span {
-		width: 30%;
-		font-size: 0.65rem;
-		line-height: 1.4rem;
-		padding-right: 0.4rem;
-	}
 
 	ul {
 		display: flex;

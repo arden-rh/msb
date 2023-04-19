@@ -44,9 +44,24 @@ p {
 	padding: 0 1rem;
 }
 
+.fa-arrow-right {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	margin-right: 0.8rem;
+}
+
 .link {
 	font-family: $secondary-font;
+	font-size: 0.9rem;
 	font-weight: 400;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	line-height: 1.5rem;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .section {

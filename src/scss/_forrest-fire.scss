@@ -43,18 +43,16 @@
 		}
 
 		.arrow-button {
-			border-top: 1px solid $background-grey-light;
-			border-bottom: 1px solid $background-grey-light;
-			border-right: 1px solid $background-grey-light;
+			border: 1px solid $background-grey-light;
+			border-left: none;
 			width: 12%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 
-			.fa-solid {
+			.fa-arrow-right {
 				color: $primary-red;
-				font-size: 1.2rem;
-
+				margin: 0;
 			}
 		}
 	}
