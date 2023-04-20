@@ -66,6 +66,8 @@ footer {
 	#links {
 		background-color: white;
 		padding-top: 0.5rem;
+		padding-bottom: 2rem;
+		margin-bottom: 0;
 
 		ul {
 			margin: 0;
@@ -112,7 +114,7 @@ footer {
 		color: white;
 		display: flex;
 		flex-direction: column;
-		margin-top: 3rem;
+		margin-top: 0;
 
 		a {
 			font-size: 0.9rem;
@@ -170,8 +172,88 @@ footer {
 
 // Media-queries
 @media screen and (min-width: $breakpoint-desktop) {
+
 	footer {
-		grid-column: 1 / 9;
-		flex-direction: row;
+		grid-column: 1 / 11;
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+
+		#links {
+			grid-column: 1 / 11;
+			padding: 2rem 10% 0;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 1rem;
+
+			div:nth-child(1) {
+				grid-column: 1 / 2;
+			}
+
+			div:nth-child(2) {
+				grid-column: 2 / 3;
+			}
+
+			div:nth-child(3) {
+				grid-column: 3 / 4;
+			}
+
+			div:nth-child(4) {
+				grid-column: 4 / 5;
+			}
+
+			.footer-btn {
+				grid-column: 4 / 5;
+			}
+
+			.websites {
+				a {
+					font-size: 0.8rem;
+				}
+			}
+
+			#other-websites {
+				grid-column: 1 / 5;
+
+				#line {
+					width: 70%;
+				}
+			}
+		}
+
+		#contact-msb {
+			grid-column: 1 / 11;
+			padding: 2rem 10% 0;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 1rem;
+
+			img {
+				margin-top: 25%;
+			}
+
+			div:nth-child(2) {
+				grid-column: 2 / 4;
+
+				div {
+					display: flex;
+
+					div {
+						flex-direction: column;
+
+						&:first-child {
+							margin-right: 20%;
+						}
+					}
+				}
+			}
+
+			#quote {
+				grid-column: 1 / 5;
+
+				span {
+					font-size: 1.5rem;
+				}
+			}
+		}
 	}
 }

@@ -63,6 +63,10 @@ nav {
 			line-height: 1.4rem;
 			padding: 0 0.2rem;
 
+			&:not(:first-child) {
+				cursor: pointer;
+			}
+
 			&:nth-child(n+3):nth-child(-n+5) {
 				&::before {
 					content: ">";
