@@ -3,8 +3,13 @@
 		color: $primary-red;
 	}
 
-	.link:hover {
-		color: $primary-purple;
-		font-weight: 600;
+	a {
+		width: fit-content;
+
+		&:hover {
+			span {
+				color: $primary-purple;
+			}
+		}
 	}
 }

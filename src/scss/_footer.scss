@@ -134,10 +134,10 @@ footer {
 		}
 
 		img {
-			height: 75px;
-			width: 200px;
-			background-color: aqua;
+			height: 85px;
 			margin-top: 2rem;
+			object-fit: scale-down;
+			object-position: left;
 		}
 
 		p {

@@ -3,9 +3,17 @@ a {
 	color: inherit;
 
 	&:hover {
-		text-decoration: underline;
+		span {
+			font-weight: 600;
+			text-decoration: underline;
+		}
 	}
+
+	// span:hover {
+	// 	text-decoration: underline;
+	// }
 }
+
 
 button {
 	color: white;
@@ -51,6 +59,11 @@ p {
 
 section {
 	margin: 2rem 0;
+
+	&:last-child {
+		margin-bottom: 0;
+		padding-bottom: 1rem;
+	}
 }
 
 .content {
@@ -71,8 +84,4 @@ section {
 	display: flex;
 	align-items: center;
 	line-height: 1.5rem;
-
-	&:hover {
-		text-decoration: underline;
-	}
 }
