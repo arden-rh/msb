@@ -85,3 +85,10 @@ section {
 	align-items: center;
 	line-height: 1.5rem;
 }
+
+// Media-queries
+@media screen and (min-width: $breakpoint-desktop) {
+	main {
+		grid-column: 2 / 7;
+	}
+}

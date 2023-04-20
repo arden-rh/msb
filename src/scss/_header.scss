@@ -82,5 +82,24 @@ nav {
 			font-weight: 600;
 		}
 	}
+}
 
+// Media-queries
+@media screen and (min-width: $breakpoint-desktop) {
+
+	header {
+		grid-column: 1 / 11;
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+
+		#logo-container {
+			grid-column: 2 / 10;
+		}
+
+		nav {
+			grid-column: 1 / 11;
+			padding-right: 10%;
+			padding-left: 10%;
+		}
+	}
 }

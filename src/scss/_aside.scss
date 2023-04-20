@@ -1,0 +1,16 @@
+aside {
+	grid-column: 7 / 10;
+	border: 2px solid red;
+	margin-top: 35vh;
+	margin-left: 20%;
+	height: 500px;
+}
+
+
+
+@media screen and (max-width: $breakpoint-desktop) {
+
+	aside {
+		display: none;
+	}
+}

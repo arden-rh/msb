@@ -1,5 +1,6 @@
 // @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'config';
+@import 'aside';
 @import 'contact';
 @import 'expert';
 @import 'footer';
@@ -17,7 +18,6 @@
 }
 
 html {
-    font-size: 16px;
     color: $text-black;
 }
 
@@ -35,4 +35,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+}
+
+// Media-queries
+@media screen and (min-width: $breakpoint-desktop) {
+	#container {
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+	}
 }

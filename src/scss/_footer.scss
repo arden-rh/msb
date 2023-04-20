@@ -167,3 +167,11 @@ footer {
 
 	}
 }
+
+// Media-queries
+@media screen and (min-width: $breakpoint-desktop) {
+	footer {
+		grid-column: 1 / 9;
+		flex-direction: row;
+	}
+}
