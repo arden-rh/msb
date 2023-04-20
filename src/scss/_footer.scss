@@ -171,6 +171,20 @@ footer {
 }
 
 // Media-queries
+@media screen and (min-width: $breakpoint-tablet) {
+
+	footer {
+		#links {
+			padding: 2rem 10% 0;
+		}
+
+		#contact-msb {
+			padding: 2rem 10% 0;
+		}
+	}
+
+}
+
 @media screen and (min-width: $breakpoint-desktop) {
 
 	footer {
@@ -180,7 +194,6 @@ footer {
 
 		#links {
 			grid-column: 1 / 11;
-			padding: 2rem 10% 0;
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 			gap: 1rem;
@@ -222,7 +235,6 @@ footer {
 
 		#contact-msb {
 			grid-column: 1 / 11;
-			padding: 2rem 10% 0;
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 			gap: 1rem;

@@ -38,9 +38,18 @@ body {
 }
 
 // Media-queries
+@media screen and (min-width: $breakpoint-tablet) {
+
+	#container {
+		align-items: center;
+	}
+
+}
+
 @media screen and (min-width: $breakpoint-desktop) {
 	#container {
 		display: grid;
 		grid-template-columns: repeat(10, 1fr);
+		align-items: normal;
 	}
 }

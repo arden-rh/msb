@@ -6,8 +6,9 @@
 
 	img {
 		border-radius: 50%;
-		height: 75vw;
-		width: 75vw;
+		height: 75%;
+		width: 75%;
+		max-width: 300px;
 		margin-top: 1rem;
 	}
 
@@ -26,7 +27,6 @@
 	}
 }
 
-// Media-queries
 @media screen and (min-width: $breakpoint-desktop) {
 
 	#expert {
