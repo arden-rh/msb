@@ -47,15 +47,21 @@
 
 			#submit-btn {
 				background-color: $primary-purple;
+				border: 2px solid $primary-purple;
 				color: white;
 				width: fit-content;
 				border-radius: 25px;
-				border: none;
 				font-size: 0.8rem;
 				font-weight: 600;
 				letter-spacing: .05rem;
 				padding: 0.75rem 1.4rem;
 				margin-top: 1rem;
+				cursor: pointer;
+
+				&:hover {
+					background-color: $background-white;
+					color: $primary-purple;
+				}
 			}
 		}
 	}

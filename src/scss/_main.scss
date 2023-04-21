@@ -1,97 +1,106 @@
-a {
-	text-decoration: none;
-	color: inherit;
+main {
 
-	&:hover {
-		span {
-			font-weight: 600;
-			text-decoration: underline;
+	max-width: 768px;
+
+	a {
+
+		&:hover {
+			span {
+				font-weight: 600;
+				text-decoration: underline 3px;
+				text-underline-offset: 3px;
+			}
 		}
 	}
-}
 
 
-button {
-	color: white;
-	font-family: $primary-font;
-	font-weight: 600;
-	font-size: 0.9rem;
-	letter-spacing: 0.05rem;
-	border: none;
-	border-radius: 30px;
-	padding: 1rem 2.4rem;
-}
-
-h1, h2, h3 {
-	font-family: $primary-font;
-	padding: 0;
-	margin: 0;
-}
-
-h1 {
-	font-size: 1.6rem;
-	line-height: 2.2rem;
-	letter-spacing: 0.05rem;
-	font-weight: 700;
-}
-
-h2 {
-	font-size: 1.4rem;
-	line-height: 2rem;
-	font-weight: 600;
-}
-
-h3 {
-	font-size: 1.3rem;
-	line-height: 2rem;
-	font-weight: 600;
-}
-
-main {
-	max-width: 768px;
-}
-
-p {
-	font-family: $primary-font;
-	font-weight: 300;
-}
-
-section {
-	margin: 2rem 0;
-
-	&:last-child {
-		margin-bottom: 0;
-		padding-bottom: 1rem;
+	button {
+		color: white;
+		font-family: $primary-font;
+		font-weight: 600;
+		font-size: 0.9rem;
+		letter-spacing: 0.05rem;
+		border: none;
+		border-radius: 30px;
+		padding: 1rem 2.4rem;
+		cursor: pointer;
 	}
-}
 
-.content {
-	padding: 0 1rem;
-}
+	h1,
+	h2,
+	h3 {
+		font-family: $primary-font;
+		padding: 0;
+		margin: 0;
+	}
 
-.fa-arrow-right {
-	font-size: 1.2rem;
-	line-height: 1.5rem;
-	margin-right: 0.8rem;
-}
+	h1 {
+		font-size: 1.6rem;
+		line-height: 2.2rem;
+		letter-spacing: 0.05rem;
+		font-weight: 700;
+	}
 
-.link {
-	font-family: $secondary-font;
-	font-size: 0.9rem;
-	font-weight: 400;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	line-height: 1.5rem;
+	h2 {
+		font-size: 1.4rem;
+		line-height: 2rem;
+		font-weight: 600;
+	}
+
+	h3 {
+		font-size: 1.3rem;
+		line-height: 2rem;
+		font-weight: 600;
+	}
+
+
+
+
+
+	p {
+		font-family: $primary-font;
+		font-weight: 300;
+	}
+
+	section {
+		margin: 2rem 0;
+
+		&:last-child {
+			margin-bottom: 0;
+			padding-bottom: 1rem;
+		}
+	}
+
+	.content {
+		padding: 0 1rem;
+	}
+
+	.fa-arrow-right {
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+		margin-right: 0.8rem;
+	}
+
+	.link {
+		font-family: $secondary-font;
+		font-size: 0.9rem;
+		font-weight: 400;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		line-height: 1.5rem;
+	}
 }
 
 // Media-queries
 @media screen and (min-width: $breakpoint-desktop) {
 	main {
 		grid-column: 2 / 7;
+		grid-row: 2 / 4;
 
 		button {
 			font-size: 0.8rem;
+			padding: 1rem 1.5rem;
 		}
 	}
 }

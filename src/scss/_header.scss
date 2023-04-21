@@ -1,6 +1,7 @@
 header {
 
 	width: 100%;
+	background-color: white;
 
 	#logo-container {
 		display: flex;
@@ -21,7 +22,7 @@ header {
 			width: 40%;
 		}
 
-		#menu {
+		#menu-icon {
 			display: flex;
 			align-items: center;
 			padding: 0 1rem;
@@ -44,52 +45,93 @@ header {
 	}
 
 	nav {
-
-		background-color: $background-grey-light;
 		display: flex;
 		font-family: $primary-font;
-		text-transform: uppercase;
-		padding: 0.5rem 0.7rem;
 
-		ul {
-			display: flex;
-			flex-wrap: wrap;
-			margin: 0;
-			padding: 0;
+		#menu {
+			display: none;
+			background-color: $background-white;
+			font-weight: 600;
+			padding: 0 5%;
 
-			li {
+			ul {
 				display: flex;
-				align-items: center;
-				list-style: none;
-				font-size: 0.7rem;
-				font-weight: 300;
-				letter-spacing: 0.01rem;
-				line-height: 1.4rem;
-				padding: 0 0.2rem;
+				margin: 0;
+				padding: 0;
 
-				&:not(:first-child) {
-					cursor: pointer;
+				li {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					list-style: none;
+					text-align: center;
+
+					a {
+						padding: 2rem 0.9rem;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						border-bottom: 5px solid $background-white;
+						height: 100%;
+
+						&:hover {
+							border-bottom: 5px solid $primary-red;
+						}
+					}
+
 				}
+			}
 
-				&:nth-child(n+3):nth-child(-n+5) {
-					&::before {
-						content: ">";
-						font-size: 0.9rem;
-						font-weight: 600;
-						margin-right: 0.4rem;
+		}
+
+		#nav-tree {
+			background-color: $background-grey-light;
+			padding: 0.5rem 0.7rem;
+			text-transform: uppercase;
+			width: 100%;
+
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				margin: 0;
+				padding: 0;
+
+				li {
+					display: flex;
+					align-items: center;
+					list-style: none;
+					font-size: 0.7rem;
+					font-weight: 300;
+					letter-spacing: 0.01rem;
+					line-height: 1.4rem;
+					padding: 0 0.2rem;
+
+					&:not(:first-child) {
+						cursor: pointer;
+					}
+
+					&:nth-child(n+3):nth-child(-n+5) {
+						&::before {
+							content: ">";
+							font-size: 0.9rem;
+							font-weight: 600;
+							margin-right: 0.4rem;
+						}
+					}
+
+					#house {
+						fill: $text-black;
+						width: 1.2rem;
 					}
 				}
 
-				#house {
-					fill: $text-black;
-					width: 1.2rem;
+				#current {
+					font-weight: 600;
 				}
 			}
 
-			#current {
-				font-weight: 600;
-			}
 		}
+
 	}
 }
 
@@ -99,33 +141,65 @@ header {
 @media screen and (min-width: $breakpoint-tablet) {
 
 	header {
+		background-image: url("/src/images/lines-header.png");
+		background-size: contain;
+		background-position: top right;
+		background-repeat: no-repeat;
+
 		#logo-container {
-			padding-left: 10%;
-			padding-right: 10%;
+			padding: 1rem 10%;
+
+			img {
+				height: 60px;
+			}
+
+			div {
+				width: 20%;
+				justify-content: center;
+				background-color: $primary-purple;
+				border-radius: 25px;
+				color: white;
+				padding: 0.1rem 0;
+			}
 		}
 
 		nav {
-			padding-left: 10%;
-			padding-right: 10%;
+			#nav-tree {
+				padding: 0.5rem 10%;
+			}
 		}
 	}
 
 }
+
 @media screen and (min-width: $breakpoint-desktop) {
 
 	header {
+		background-image: url("/src/images/lines-header-small.png");
 		grid-column: 1 / 11;
 		display: grid;
 		grid-template-columns: repeat(10, 1fr);
 
 		#logo-container {
 			grid-column: 2 / 10;
-			padding-left: 0;
-			padding-right: 0;
+			padding: 1rem 0;
+
+			img {
+				height: 100px;
+			}
+
+			#menu-icon {
+				display: none;
+			}
 		}
 
 		nav {
 			grid-column: 1 / 11;
+			flex-direction: column;
+
+			#menu {
+				display: flex;
+			}
 		}
 	}
 }

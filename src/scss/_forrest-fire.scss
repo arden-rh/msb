@@ -56,5 +56,23 @@
 				margin: 0;
 			}
 		}
+
+		&:hover {
+			background-color: $primary-red;
+			color: white;
+
+			.box-text {
+				border-top: 1px solid $primary-red;
+				border-bottom: 1px solid $primary-red;
+			}
+
+			.arrow-button {
+				border: 1px solid $primary-red;
+			}
+
+			.fa-arrow-right {
+				color: white;
+			}
+		}
 	}
 }
