@@ -2,18 +2,31 @@
 <html lang="sv">
 
 <head>
+	<!-- Meta tags -->
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Arden Haldorson">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="src/images/favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="src/images/favicon_io/site.webmanifest">
+
+	<!-- Stylesheets-->
 	<link rel="stylesheet" href="style.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+	integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+	crossorigin="anonymous" referrerpolicy="no-referrer">
+
+	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer">
+
 	<title>MSB - Orosanmälan för fallande träd</title>
 </head>
 
@@ -242,13 +255,11 @@
 					</div>
 					<div class="form-field">
 						<label for="description">Beskriv trädets position *</label>
-						<!-- <input type="text" name="description" id="description" required> -->
 						<textarea form="report-form" name="description" id="description" required></textarea>
 					</div>
 					<div class="form-field">
 						<label for="more-info">Övrig information du tror vi kan ha nytta av (vägbeskrivning/riktmärken
 							etcetera)</label>
-						<!-- <input type="text" name="more-info" id="more-info"> -->
 						<textarea form="report-form" name="more-info" id="more-info"></textarea>
 					</div>
 					<div class="form-field">
@@ -268,7 +279,7 @@
 				</div>
 			</section>
 			<div class="content" id="social-media">
-				<div>Senast granskad: 19 april 2023</div>
+				<div>Senast granskad: 21 april 2023</div>
 				<div id="social-media-links">
 					<span>Dela sidan med andra</span>
 					<a href="">Facebook<i class="fa-brands fa-facebook-f"></i></a>

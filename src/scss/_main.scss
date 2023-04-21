@@ -53,26 +53,9 @@ main {
 		font-weight: 600;
 	}
 
-
-
-
-
 	p {
 		font-family: $primary-font;
 		font-weight: 300;
-	}
-
-	section {
-		margin: 2rem 0;
-
-		&:last-child {
-			margin-bottom: 0;
-			padding-bottom: 1rem;
-		}
-	}
-
-	.content {
-		padding: 0 1rem;
 	}
 
 	.fa-arrow-right {
@@ -90,6 +73,19 @@ main {
 		align-items: center;
 		line-height: 1.5rem;
 	}
+}
+
+section {
+	margin: 2rem 0;
+
+	&:last-child {
+		margin-bottom: 0;
+		padding-bottom: 1rem;
+	}
+}
+
+.content {
+	padding: 0 1rem;
 }
 
 // Media-queries

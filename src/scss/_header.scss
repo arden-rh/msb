@@ -19,27 +19,27 @@ header {
 			font-size: 0.8rem;
 			display: flex;
 			justify-content: right;
-			width: 40%;
-		}
+			padding: 0 0.5rem;
+			width: fit-content;
 
-		#menu-icon {
-			display: flex;
-			align-items: center;
-			padding: 0 1rem;
+			#menu-icon {
+				display: flex;
+				align-items: center;
 
-			i {
-				margin-right: 0.2rem;
+				i {
+					margin-right: 0.2rem;
+				}
 			}
-		}
 
-		#search {
-			text-transform: uppercase;
-			display: flex;
-			align-items: center;
-			margin-right: 1.5rem;
-
-			i {
+			#search {
+				text-transform: uppercase;
+				display: flex;
+				align-items: center;
 				margin-right: 0.2rem;
+
+				i {
+					margin-right: 0.2rem;
+				}
 			}
 		}
 	}
@@ -50,6 +50,7 @@ header {
 
 		#menu {
 			display: none;
+			justify-content: center;
 			background-color: $background-white;
 			font-weight: 600;
 			padding: 0 5%;
@@ -154,12 +155,15 @@ header {
 			}
 
 			div {
-				width: 20%;
 				justify-content: center;
 				background-color: $primary-purple;
 				border-radius: 25px;
 				color: white;
-				padding: 0.1rem 0;
+				padding: 0.1rem 0.5rem;
+
+				#search {
+					margin-right: 1rem;
+				}
 			}
 		}
 
@@ -188,8 +192,17 @@ header {
 				height: 100px;
 			}
 
-			#menu-icon {
-				display: none;
+			div {
+
+				padding: 0.5rem 0.8rem;
+
+				#menu-icon {
+					display: none;
+				}
+
+				#search {
+					margin-right: 0.2rem;
+				}
 			}
 		}
 
