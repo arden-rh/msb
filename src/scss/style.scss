@@ -32,9 +32,18 @@ body {
 	margin: 0;
 }
 
+section {
+	margin: 2rem 0;
+
+	&:last-child {
+		margin-bottom: 0;
+		padding-bottom: 1rem;
+	}
+}
+
 .btn-link {
-	background-color: $primary-purple;
-	border: 2px solid $primary-purple;
+	background-color: $primary-red;
+	border: 2px solid $primary-red;
 	color: white;
 	border-radius: 25px;
 	display: flex;
@@ -49,9 +58,13 @@ body {
 
 	&:hover {
 		background-color: $background-white;
-		color: $primary-purple;
+		color: $primary-red;
 		font-weight: 500;
 	}
+}
+
+.content {
+	padding: 0 1rem;
 }
 
 .hidden {

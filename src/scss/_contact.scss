@@ -22,10 +22,6 @@
 			font-family: $primary-font;
 			margin-top: 2rem;
 
-			&:first-child {
-				margin-right: 2rem;
-			}
-
 			img {
 				height: 110px;
 				width: 110px;
@@ -61,6 +57,10 @@
 	#contact {
 		div {
 			flex-direction: row;
+
+			&:first-child {
+				margin-right: 2rem;
+			}
 		}
 	}
 }

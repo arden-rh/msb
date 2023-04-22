@@ -1,9 +1,16 @@
 #intro {
 	.fa-arrow-right {
-		color: $primary-red;
+		color: $primary-purple;
 	}
 
 	a {
 		width: fit-content;
+
+		&:hover {
+			span {
+				text-decoration: underline 3px $primary-purple;
+			}
+		}
+
 	}
 }

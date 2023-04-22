@@ -11,7 +11,7 @@ aside {
 		left: 0;
 
 		h2 {
-			border-bottom: 5px solid $primary-red;
+			border-bottom: 5px solid $primary-purple;
 			font-size: 1.2rem;
 			padding-bottom: 0.5rem;
 			margin-bottom: 0.9rem;
@@ -47,10 +47,10 @@ aside {
 						content: "";
 						width: 10px;
 						height: 100%;
-						background-color: $primary-red;
+						background-color: $primary-purple;
 						margin-right: 15px;
-						border-top: 1px solid $primary-red;
-						border-bottom: 1px solid $primary-red;
+						border-top: 1px solid $primary-purple;
+						border-bottom: 1px solid $primary-purple;
 					}
 				}
 			}

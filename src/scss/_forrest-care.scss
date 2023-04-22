@@ -2,6 +2,14 @@
 	background-color: $background-grey-dark;
 	color: white;
 
+	a {
+		&:hover {
+			span {
+				text-decoration: underline 3px $primary-red;
+			}
+		}
+	}
+
 	div {
 		margin: 1rem;
 		padding: 1rem 0 2rem;

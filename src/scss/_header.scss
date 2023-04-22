@@ -136,7 +136,7 @@ header {
 @media screen and (min-width: $breakpoint-tablet) {
 
 	header {
-		background-image: url("/src/images/lines-header.png");
+		background-image: url("/src/images/lines-header.svg");
 		background-size: contain;
 		background-position: top right;
 		background-repeat: no-repeat;
@@ -145,15 +145,15 @@ header {
 			padding: 1rem 10%;
 
 			img {
-				height: 60px;
+				height: 80px;
 			}
 
 			div {
 				justify-content: center;
-				background-color: $primary-purple;
+				background-color: $primary-red;
 				border-radius: 25px;
 				color: white;
-				padding: 0.1rem 0.5rem;
+				padding: 0.3rem 0.5rem;
 			}
 		}
 
@@ -169,7 +169,7 @@ header {
 @media screen and (min-width: $breakpoint-desktop) {
 
 	header {
-		background-image: url("/src/images/lines-header-small.png");
+		background-image: url("/src/images/lines-header-small.svg");
 		grid-column: 1 / 11;
 		display: grid;
 		grid-template-columns: repeat(10, 1fr);
@@ -188,10 +188,6 @@ header {
 
 				#menu-icon {
 					display: none;
-				}
-
-				#search {
-					margin-right: 0.2rem;
 				}
 			}
 		}
