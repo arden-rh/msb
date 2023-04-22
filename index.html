@@ -17,8 +17,8 @@
 	<!-- Stylesheets-->
 	<link rel="stylesheet" href="style.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-	integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-	crossorigin="anonymous" referrerpolicy="no-referrer">
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -266,39 +266,49 @@
 					</div>
 				</form>
 			</section>
-			<section class="content" id="contact">
+			<section id="contact">
 				<h2>Kontakter</h2>
 				<div>
-					<img src="src/images/person-3-sq-colour.png"
-						alt="Head and bust of a smiling middle aged woman with brown hair and a striped top">
-					<span id="contact-name">Alma Svensson</span>
-					<span id="contact-title">Kontakt</span>
-					<span id="job-title">Teamleader <br>Säkerhet i Skog och mark</span>
-					<span id="contact-email">alma.svensson@msb.se</span>
+					<div>
+						<img src="src/images/person-3-sq-colour.png"
+							alt="Head and bust of a smiling middle aged woman with brown hair and a striped top">
+						<span class="contact-name">Alma Svensson</span>
+						<span class="job-title">Arborist</span>
+						<span class="contact-email">alma.svensson@msb.se</span>
+					</div>
+					<div>
+						<img src="src/images/person-3-sq-colour.png"
+							alt="Head and bust of a smiling middle aged woman with brown hair and a striped top">
+						<span class="contact-name">Alma Svensson</span>
+						<span class="job-title">Teamleader <br>Säkerhet i Skog och mark</span>
+						<span class="contact-email">alma.svensson@msb.se</span>
+					</div>
 				</div>
 			</section>
 			<div class="content" id="social-media">
 				<div>Senast granskad: 21 april 2023</div>
 				<div id="social-media-links">
 					<span>Dela sidan med andra</span>
-					<a href="">Facebook<i class="fa-brands fa-facebook-f"></i></a>
-					<a href="">Twitter<i class="fa-brands fa-twitter"></i></a>
-					<a href="">Kopiera Länk<i class="fa-solid fa-link"></i></a>
+					<a class="btn-link" href="">Facebook<i class="fa-brands fa-facebook-f"></i></a>
+					<a class="btn-link" href="">Twitter<i class="fa-brands fa-twitter"></i></a>
+					<a class="btn-link" href="">Kopiera Länk<i class="fa-solid fa-link"></i></a>
 				</div>
 			</div>
 		</main>
 		<aside>
-			<h2>Navigation</h2>
-			<ul>
-				<li><a href="#">Introduktion</a></li>
-				<li><a href="#forrest-care">En välmående skog</a></li>
-				<li><a href="#expert">Fråga experten</a></li>
-				<li><a href="#when-to-report">När ska jag anmäla?</a></li>
-				<li><a href="#forrest-fire">Skogsbrand</a></li>
-				<li><a href="#report">Anmälan av fara för fallande träd</a></li>
-				<li><a href="#contact">Kontakter</a></li>
-				<li><a href="#social-media">Sociala medier</a></li>
-			</ul>
+			<nav>
+				<h2>Navigation</h2>
+				<ul>
+					<li><a href="#">Introduktion</a></li>
+					<li><a href="#forrest-care">En välmående skog</a></li>
+					<li><a href="#expert">Fråga experten</a></li>
+					<li><a href="#when-to-report">När ska jag anmäla?</a></li>
+					<li><a href="#forrest-fire">Skogsbrand</a></li>
+					<li><a href="#report">Anmälan av fara för fallande träd</a></li>
+					<li><a href="#contact">Kontakter</a></li>
+					<li><a href="#social-media">Sociala medier</a></li>
+				</ul>
+			</nav>
 		</aside>
 		<footer>
 			<section class="content" id="links">
@@ -340,10 +350,9 @@
 						<li><a href=""><i class="fa-brands fa-youtube"></i>YouTube</a></li>
 					</ul>
 				</div>
-				<a class="footer-btn" href=""><span>Social medier</span><span class="arrow"><i
-							class="fa-solid fa-arrow-right"></i></span></a>
+				<a class="footer-btn btn-link" href="">Social medier</a>
 				<div id="other-websites">
-					<h4>Våra andra webbplatser</h4><span id="line"></span>
+					<h4>Våra andra webbplatser</h4>
 				</div>
 				<div class="websites">
 					<a href="">CERT-SE<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -377,8 +386,7 @@
 						stimulera till debatt i dessa frågor.
 					</p>
 				</div>
-				<a class="footer-btn" href=""><span>Fler webbplatser</span><span class="arrow"><i
-							class="fa-solid fa-arrow-right"></i></span></a>
+				<a class="footer-btn btn-link" href="">Fler webbplatser</a>
 			</section>
 			<section class="content" id="contact-msb">
 				<img src="src/images/logotypes/msb_rgb_negativ_150ppi.png" height="85" alt="MSB logotype">
