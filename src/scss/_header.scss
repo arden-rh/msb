@@ -1,6 +1,7 @@
 header {
 
 	width: 100%;
+	// max-width: 600px;
 	background-color: white;
 
 	#logo-container {
@@ -16,7 +17,6 @@ header {
 		}
 
 		div {
-			font-size: 0.8rem;
 			display: flex;
 			justify-content: right;
 			padding: 0 0.5rem;
@@ -35,7 +35,6 @@ header {
 				text-transform: uppercase;
 				display: flex;
 				align-items: center;
-				margin-right: 0.2rem;
 
 				i {
 					margin-right: 0.2rem;
@@ -50,10 +49,9 @@ header {
 
 		#menu {
 			display: none;
-			justify-content: center;
 			background-color: $background-white;
 			font-weight: 600;
-			padding: 0 5%;
+			padding: 0 10%;
 
 			ul {
 				display: flex;
@@ -104,14 +102,10 @@ header {
 					font-size: 0.7rem;
 					font-weight: 300;
 					letter-spacing: 0.01rem;
-					line-height: 1.4rem;
 					padding: 0 0.2rem;
 
-					&:not(:first-child) {
-						cursor: pointer;
-					}
 
-					&:nth-child(n+3):nth-child(-n+5) {
+					&:not(:first-child) {
 						&::before {
 							content: ">";
 							font-size: 0.9rem;
@@ -160,10 +154,6 @@ header {
 				border-radius: 25px;
 				color: white;
 				padding: 0.1rem 0.5rem;
-
-				#search {
-					margin-right: 1rem;
-				}
 			}
 		}
 

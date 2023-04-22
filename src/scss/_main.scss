@@ -1,5 +1,7 @@
 main {
 
+	display: flex;
+	flex-direction: column;
 	max-width: 768px;
 
 	a {
@@ -39,6 +41,7 @@ main {
 		line-height: 2.2rem;
 		letter-spacing: 0.05rem;
 		font-weight: 700;
+		margin-top: 1rem;
 	}
 
 	h2 {
@@ -56,6 +59,10 @@ main {
 	p {
 		font-family: $primary-font;
 		font-weight: 300;
+	}
+
+	.content {
+		max-width: 600px;
 	}
 
 	.fa-arrow-right {
