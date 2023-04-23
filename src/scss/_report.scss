@@ -1,12 +1,10 @@
 #report {
-
 	#about-report {
 		font-family: $secondary-font;
 
 		strong {
 			font-weight: 700;
 		}
-
 	}
 
 	#sent-form-msg {
@@ -26,7 +24,6 @@
 			text-transform: lowercase;
 			text-decoration: underline 2px;
 			text-underline-offset: 2px;
-			font-size: 0.9rem;
 		}
 	}
 
@@ -84,5 +81,4 @@
 			}
 		}
 	}
-
 }

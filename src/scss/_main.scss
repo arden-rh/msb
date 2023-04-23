@@ -57,12 +57,36 @@ main {
 		font-weight: 300;
 	}
 
+	.arrow-button {
+		width: 12%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.fa-arrow-right {
+			margin: 0;
+		}
+	}
+
+	.box-text {
+		height: 100%;
+		width: 88%;
+		display: flex;
+		align-items: center;
+
+		&::before {
+			width: 4%;
+			height: 100%;
+			content: "";
+			margin-right: 1.5rem;
+		}
+	}
+
 	.content {
 		max-width: 600px;
 	}
 
 	.contact-email {
-		color: $primary-purple;
 		font-size: 0.9rem;
 		font-weight: 300;
 		cursor: pointer;
@@ -79,14 +103,16 @@ main {
 		margin-right: 0.8rem;
 	}
 
-	.link {
-		font-family: $primary-font;
-		font-size: 0.9rem;
-		font-weight: 400;
+	.info-box {
 		cursor: pointer;
 		display: flex;
-		align-items: center;
-		line-height: 1.5rem;
+		flex-direction: column;
+		font-family: $primary-font;
+		font-weight: 600;
+		font-size: 0.9rem;
+		width: 100%;
+		max-width: 500px;
+		margin: 3rem 0;
 	}
 }
 
@@ -99,10 +125,6 @@ main {
 		button {
 			font-size: 0.8rem;
 			padding: 1rem 1.5rem;
-		}
-
-		.link {
-			font-size: 1rem;
 		}
 	}
 }

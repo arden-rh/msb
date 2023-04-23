@@ -4,6 +4,13 @@
 	}
 
 	a {
+		display: flex;
+		font-family: $primary-font;
+		font-size: 0.9rem;
+		font-weight: 400;
+		cursor: pointer;
+		align-items: center;
+		line-height: 1.5rem;
 		width: fit-content;
 
 		&:hover {
@@ -11,6 +18,13 @@
 				text-decoration: underline 3px $primary-purple;
 			}
 		}
+	}
+}
 
+// Media-queries
+@media screen and (min-width: $breakpoint-desktop) {
+
+	a {
+		font-size: 1rem;
 	}
 }

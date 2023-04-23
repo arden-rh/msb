@@ -1,23 +1,53 @@
 #forrest-care {
 	background-color: $background-grey-dark;
 	color: white;
-
-	a {
-		&:hover {
-			span {
-				text-decoration: underline 3px $primary-red;
-			}
-		}
-	}
+	font-family: $primary-font;
 
 	div {
 		margin: 1rem;
-		padding: 1rem 0 2rem;
+
+		p {
+			padding: 1rem 0;
+		}
+
+		&:last-child {
+			display: flex;
+			width: 100%;
+			height: 4rem;
+			cursor: pointer;
+			margin: 0;
+			padding-left: 1rem;
+
+			&:hover {
+				.fa-arrow-right {
+					color: $primary-red;
+					text-decoration: none;
+				}
+			}
+		}
 	}
 
 	img {
 		height: 450px;
 		width: 100%;
 		object-fit: cover;
+	}
+
+	.box-text {
+		height: 100%;
+		width: 88%;
+		display: flex;
+		align-items: center;
+		margin: 0;
+
+		&:hover {
+			text-decoration: underline 2px $primary-red;
+			text-underline-offset: 2px;
+		}
+
+		&::before {
+			width: 0;
+			margin-right: 0;
+		}
 	}
 }

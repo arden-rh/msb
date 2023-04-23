@@ -1,5 +1,4 @@
 footer {
-
 	font-family: $primary-font;
 
 	h4 {
@@ -14,7 +13,6 @@ footer {
 	}
 
 	.websites {
-
 		margin-bottom: 3rem;
 
 		a {
@@ -54,7 +52,7 @@ footer {
 		li {
 			list-style: none;
 			font-size: 0.9rem;
-			font-weight: 300;
+			font-weight: 500;
 			color: $primary-red;
 			padding-bottom: 1.4rem;
 
@@ -63,7 +61,7 @@ footer {
 			}
 
 			a:hover {
-				font-weight: 500;
+				font-weight: 600;
 			}
 
 			.fa-brands {
@@ -140,7 +138,6 @@ footer {
 				letter-spacing: 0.02rem;
 			}
 		}
-
 	}
 }
 
@@ -202,7 +199,6 @@ footer {
 			}
 		}
 	}
-
 }
 
 @media screen and (min-width: $breakpoint-desktop) {
