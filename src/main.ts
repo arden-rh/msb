@@ -27,7 +27,9 @@ const chevron2 = document.querySelector('#box-2-chevron') as SVGElement
 const chevron3 = document.querySelector('#box-3-chevron') as SVGElement
 const chevron4 = document.querySelector('#box-4-chevron') as SVGElement
 
-
+// Form
+const form = document.querySelector('#report-form') as HTMLFormElement
+const formSentMsg = document.querySelector('#sent-form-msg') as HTMLDivElement
 
 /**
  * Function to toggle info boxes from hidden to showing
@@ -70,4 +72,12 @@ infoBox4.addEventListener('click', () => {
 
 	toggleBox(infoBox4Content, infoBox4Text, chevron4)
 
+})
+
+form.addEventListener('submit', e => {
+
+	e.preventDefault()
+	form.reset()
+
+	formSentMsg.classList.toggle('hidden')
 })

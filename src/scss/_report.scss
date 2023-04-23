@@ -9,6 +9,27 @@
 
 	}
 
+	#sent-form-msg {
+		background-color: $background-grey-dark;
+		color: white;
+		margin-top: 2rem;
+		padding: 1rem;
+
+		span {
+			font-family: $primary-font;
+			text-transform: uppercase;
+			font-size: 0.8rem;
+		}
+
+		.contact-email {
+			color: inherit;
+			text-transform: lowercase;
+			text-decoration: underline 2px;
+			text-underline-offset: 2px;
+			font-size: 0.9rem;
+		}
+	}
+
 	form {
 		display: flex;
 		flex-direction: column;
@@ -20,13 +41,11 @@
 		}
 
 		.form-field {
-
 			font-family: $primary-font;
 			font-size: 0.9rem;
 			margin: 0.5rem 0;
 
 			input {
-				color: rgb(202, 202, 197);
 				font-family: $primary-font;
 				font-size: 1rem;
 				padding: 0.4rem;
@@ -39,11 +58,11 @@
 			::placeholder {
 				color: rgb(202, 202, 197);
 				opacity: 1;
-			  }
+			}
 
-			  ::-ms-input-placeholder {
+			::-ms-input-placeholder {
 				color: rgb(202, 202, 197);
-			  }
+			}
 
 			#submit-btn {
 				background-color: $primary-purple;

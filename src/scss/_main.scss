@@ -61,6 +61,18 @@ main {
 		max-width: 600px;
 	}
 
+	.contact-email {
+		color: $primary-purple;
+		font-size: 0.9rem;
+		font-weight: 300;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline 2px;
+			text-underline-offset: 2px;
+		}
+	}
+
 	.fa-arrow-right {
 		font-size: 1.2rem;
 		line-height: 1.5rem;
