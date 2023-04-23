@@ -146,7 +146,7 @@ footer {
 
 	footer {
 		#links {
-			background-image: url("/src/images/lines-footer.svg");
+			background-image: url("/src/illustrations/lines-footer.svg");
 			background-size: contain;
 			background-position: bottom left;
 			background-repeat: no-repeat;
@@ -209,7 +209,7 @@ footer {
 		grid-template-columns: repeat(10, 1fr);
 
 		#links {
-			background-image: url("/src/images/lines-footer-small.svg");
+			background-image: url("/src/illustrations/lines-footer-small.svg");
 			grid-column: 1 / 11;
 			grid-template-columns: repeat(4, 1fr);
 			gap: 1rem;

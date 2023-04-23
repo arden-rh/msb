@@ -148,7 +148,7 @@ header {
 @media screen and (min-width: $breakpoint-tablet) {
 
 	header {
-		background-image: url("/src/images/lines-header.svg");
+		background-image: url("/src/illustrations/lines-header.svg");
 		background-size: contain;
 		background-position: top right;
 		background-repeat: no-repeat;
@@ -180,7 +180,7 @@ header {
 @media screen and (min-width: $breakpoint-desktop) {
 
 	header {
-		background-image: url("/src/images/lines-header-small.svg");
+		background-image: url("/src/illustrations/lines-header-small.svg");
 		grid-column: 1 / 11;
 		display: grid;
 		grid-template-columns: repeat(10, 1fr);
